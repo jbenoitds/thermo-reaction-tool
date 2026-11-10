@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thermoreact"
+version = "0.1.0"
+description = "Reaction thermochemistry & equilibrium calculator: ΔH°, ΔS°, ΔG° and K versus temperature from formulas or SMILES"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "Jean-Benoit Deville-Stoetzel"}]
+keywords = ["thermodynamics", "chemistry", "equilibrium", "gibbs", "enthalpy", "education", "physical chemistry", "joback"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Chemistry",
+]
+dependencies = []
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.3"]
+test = ["pytest>=6.2"]
+dev = ["pytest>=6.2", "matplotlib>=3.3"]
+
+[project.scripts]
+thermoreact = "thermoreact.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+thermoreact = ["data/*.csv", "data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--doctest-modules"

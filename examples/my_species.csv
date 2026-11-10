@@ -1,0 +1,7 @@
+# Example of extra species data you can load with:  thermoreact ... --data examples/my_species.csv
+# Required columns: formula, phase, dHf_kJ, S_J.  Optional: id, name, aliases (;-separated), Cp_J, std, cas,
+# smiles, tmin, tmax, source.  Values below: NBS tables (Wagman et al., 1982).
+formula,phase,name,aliases,dHf_kJ,S_J,Cp_J,source
+PbO,s,lead(II) oxide,litharge,-218.99,66.5,45.77,NBS
+PbS,s,lead(II) sulfide,galena,-100.4,91.2,49.50,NBS
+Xe,g,xenon,,0,169.68,20.79,NBS

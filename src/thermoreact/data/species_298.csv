@@ -1,0 +1,131 @@
+# Standard-state data at 298.15 K and 1 bar.
+# dHf_kJ = standard enthalpy of formation (kJ/mol); S_J = standard molar entropy (J/(mol K));
+# Cp_J = standard molar heat capacity at 298.15 K (J/(mol K)); blank = unknown.
+# std = 1 marks the phase used when the user omits the phase (the stable phase at 298.15 K, 1 bar).
+# tmin/tmax (K) = advisory validity range of this phase (e.g. boiling point of a liquid); blank = none.
+# Sources: NIST = NIST Chemistry WebBook / NIST-JANAF (Chase 1998) and CODATA (Cox, Wagman & Medvedev 1989);
+#          NBS  = NBS Tables of Chemical Thermodynamic Properties (Wagman et al. 1982), as reproduced in Atkins' Physical Chemistry.
+id,formula,phase,std,name,aliases,cas,smiles,dHf_kJ,S_J,Cp_J,tmin,tmax,source
+H2(g),H2,g,1,hydrogen,dihydrogen,1333-74-0,[H][H],0,130.68,28.84,,,NIST
+O2(g),O2,g,1,oxygen,dioxygen,7782-44-7,O=O,0,205.15,29.38,,,NIST
+N2(g),N2,g,1,nitrogen,dinitrogen,7727-37-9,N#N,0,191.61,29.12,,,NIST
+F2(g),F2,g,1,fluorine,difluorine,7782-41-4,FF,0,202.78,31.30,,,NBS
+Cl2(g),Cl2,g,1,chlorine,dichlorine,7782-50-5,ClCl,0,223.08,33.95,,,NIST
+Br2(l),Br2,l,1,bromine,dibromine,7726-95-6,BrBr,0,152.23,75.69,,332.5,NBS
+Br2(g),Br2,g,0,bromine (gas),dibromine (gas),7726-95-6,BrBr,30.91,245.47,36.05,,,NIST
+I2(s),I2,s,1,iodine,diiodine,7553-56-2,II,0,116.14,54.44,,386.9,NBS
+I2(g),I2,g,0,iodine (gas),,7553-56-2,II,62.44,260.69,36.90,,,NBS
+He(g),He,g,1,helium,,7440-59-7,[He],0,126.15,20.79,,,NBS
+Ne(g),Ne,g,1,neon,,7440-01-9,[Ne],0,146.33,20.79,,,NBS
+Ar(g),Ar,g,1,argon,,7440-37-1,[Ar],0,154.84,20.79,,,NBS
+H(g),H,g,1,atomic hydrogen,hydrogen atom,12385-13-6,[H],217.97,114.71,20.78,,,NBS
+O(g),O,g,1,atomic oxygen,oxygen atom,17778-80-2,[O],249.17,161.06,21.91,,,NBS
+N(g),N,g,1,atomic nitrogen,nitrogen atom,17778-88-0,[N],472.70,153.30,20.79,,,NBS
+Cl(g),Cl,g,1,atomic chlorine,chlorine atom,22537-15-1,[Cl],121.68,165.20,21.84,,,NBS
+Br(g),Br,g,1,atomic bromine,bromine atom,10097-32-2,[Br],111.86,175.02,20.79,,,NIST
+C(g),C,g,0,atomic carbon,carbon atom,7440-44-0,[C],716.68,158.10,20.84,,,NBS
+C(graphite),C,s,1,graphite,carbon;C(gr),7440-44-0,,0,5.740,8.527,,,NBS
+C(diamond),C,s,0,diamond,C(dia),7782-40-3,,1.895,2.377,6.113,,,NBS
+S(rhombic),S,s,1,sulfur,sulphur;rhombic sulfur,7704-34-9,,0,31.80,22.64,,368.5,NBS
+P(white),P,s,1,phosphorus,white phosphorus,7723-14-0,,0,41.09,23.84,,317.3,NBS
+Si(s),Si,s,1,silicon,,7440-21-3,,0,18.83,20.00,,,NBS
+H2O(l),H2O,l,1,water,,7732-18-5,O,-285.83,69.95,75.33,273.15,373.15,NIST
+H2O(g),H2O,g,0,water vapor,steam;water vapour,7732-18-5,O,-241.83,188.84,33.59,,,NIST
+H2O2(l),H2O2,l,1,hydrogen peroxide,,7722-84-1,OO,-187.78,109.6,89.1,,423.4,NBS
+O3(g),O3,g,1,ozone,,10028-15-6,[O-][O+]=O,142.67,238.92,39.24,,,NIST
+CO(g),CO,g,1,carbon monoxide,,630-08-0,[C-]#[O+],-110.53,197.66,29.14,,,NIST
+CO2(g),CO2,g,1,carbon dioxide,,124-38-9,O=C=O,-393.52,213.79,37.13,,,NIST
+CH4(g),CH4,g,1,methane,,74-82-8,C,-74.87,186.25,35.69,,,NIST
+C2H6(g),C2H6,g,1,ethane,,74-84-0,CC,-84.68,229.60,52.63,,,NBS
+C3H8(g),C3H8,g,1,propane,,74-98-6,CCC,-103.85,269.91,73.5,,,NBS
+C4H10(g),C4H10,g,1,butane,n-butane,106-97-8,CCCC,-126.15,310.23,97.45,,,NBS
+C2H4(g),C2H4,g,1,ethylene,ethene,74-85-1,C=C,52.47,219.32,42.90,,,NIST
+C3H6(g),C3H6,g,1,propene,propylene,115-07-1,C=CC,20.42,267.05,63.89,,,NBS
+C2H2(g),C2H2,g,1,acetylene,ethyne,74-86-2,C#C,226.73,200.93,44.04,,,NIST
+C6H6(l),C6H6,l,1,benzene,,71-43-2,c1ccccc1,49.0,173.3,136.1,278.7,353.2,NBS
+C6H6(g),C6H6,g,0,benzene (gas),,71-43-2,c1ccccc1,82.93,269.31,81.67,,,NBS
+C8H18(l),C8H18,l,1,octane,n-octane,111-65-9,CCCCCCCC,-249.9,361.1,254.6,216.4,398.8,NBS
+CH3OH(l),CH4O,l,1,methanol,methyl alcohol;CH3OH,67-56-1,CO,-238.66,126.8,81.6,175.6,337.8,NBS
+CH3OH(g),CH4O,g,0,methanol (gas),CH3OH,67-56-1,CO,-200.66,239.81,43.89,,,NBS
+C2H5OH(l),C2H6O,l,1,ethanol,ethyl alcohol;C2H5OH;EtOH,64-17-5,CCO,-277.69,160.7,111.46,159.0,351.4,NBS
+C2H5OH(g),C2H6O,g,0,ethanol (gas),C2H5OH;EtOH,64-17-5,CCO,-235.10,282.70,65.44,,,NBS
+CH3OCH3(g),C2H6O,g,1,dimethyl ether,methoxymethane;DME;CH3OCH3,115-10-6,COC,-184.1,266.4,64.4,,,NBS
+HCHO(g),CH2O,g,1,formaldehyde,methanal;HCHO,50-00-0,C=O,-108.57,218.77,35.40,,,NBS
+CH3CHO(g),C2H4O,g,1,acetaldehyde,ethanal;CH3CHO,75-07-0,CC=O,-166.2,263.8,55.3,,,NIST
+HCOOH(l),CH2O2,l,1,formic acid,methanoic acid;HCOOH,64-18-6,OC=O,-424.72,128.95,99.04,281.5,373.9,NBS
+CH3COOH(l),C2H4O2,l,1,acetic acid,ethanoic acid;CH3COOH,64-19-7,CC(=O)O,-484.5,159.8,124.3,289.8,391.1,NBS
+CH3COOH(g),C2H4O2,g,0,acetic acid (gas),CH3COOH,64-19-7,CC(=O)O,-432.25,282.5,66.5,,,NBS
+CH3COCH3(l),C3H6O,l,1,acetone,propanone;CH3COCH3,67-64-1,CC(C)=O,-248.1,200.4,124.7,178.5,329.2,NBS
+CH3COCH3(g),C3H6O,g,0,acetone (gas),CH3COCH3,67-64-1,CC(C)=O,-217.1,295.3,74.5,,,NIST
+C6H12O6(s),C6H12O6,s,1,glucose,alpha-D-glucose;dextrose,492-62-6,,-1273.3,209.2,218.6,,,NIST
+CO(NH2)2(s),CH4N2O,s,1,urea,carbamide;CO(NH2)2,57-13-6,NC(N)=O,-333.51,104.60,93.14,,406,NBS
+HCN(g),HCN,g,1,hydrogen cyanide,,74-90-8,C#N,135.1,201.78,35.86,,,NBS
+NH3(g),NH3,g,1,ammonia,,7664-41-7,N,-45.90,192.77,35.65,,,NIST
+NO(g),NO,g,1,nitric oxide,nitrogen monoxide,10102-43-9,[N]=O,90.29,210.76,29.86,,,NIST
+NO2(g),NO2,g,1,nitrogen dioxide,,10102-44-0,N(=O)[O],33.10,240.04,36.97,,,NIST
+N2O(g),N2O,g,1,nitrous oxide,dinitrogen monoxide,10024-97-2,[N-]=[N+]=O,82.05,219.96,38.62,,,NIST
+N2O4(g),N2O4,g,1,dinitrogen tetroxide,nitrogen tetroxide,10544-72-6,,9.08,304.38,77.26,,,NIST
+HNO3(l),HNO3,l,1,nitric acid,,7697-37-2,,-174.10,155.60,109.87,231.6,356,NBS
+SO2(g),SO2,g,1,sulfur dioxide,,7446-09-5,O=S=O,-296.84,248.21,39.84,,,NIST
+SO3(g),SO3,g,1,sulfur trioxide,,7446-11-9,O=S(=O)=O,-395.77,256.77,50.66,,,NIST
+H2S(g),H2S,g,1,hydrogen sulfide,,7783-06-4,S,-20.50,205.77,34.19,,,NIST
+H2SO4(l),H2SO4,l,1,sulfuric acid,,7664-93-9,OS(=O)(=O)O,-813.99,156.90,138.91,283.5,,NBS
+HF(g),HF,g,1,hydrogen fluoride,,7664-39-3,F,-273.30,173.78,29.14,,,NIST
+HCl(g),HCl,g,1,hydrogen chloride,,7647-01-0,Cl,-92.31,186.90,29.14,,,NIST
+HBr(g),HBr,g,1,hydrogen bromide,,10035-10-6,Br,-36.40,198.70,29.14,,,NBS
+HI(g),HI,g,1,hydrogen iodide,,10034-85-2,I,26.48,206.59,29.16,,,NBS
+PCl3(g),PCl3,g,0,phosphorus trichloride (gas),,7719-12-2,ClP(Cl)Cl,-287.0,311.78,71.84,,,NBS
+PCl5(g),PCl5,g,0,phosphorus pentachloride (gas),,10026-13-8,,-374.9,364.6,112.8,,,NBS
+NH4Cl(s),NH4Cl,s,1,ammonium chloride,,12125-02-9,,-314.43,94.6,84.1,,,NBS
+NH4NO3(s),NH4NO3,s,1,ammonium nitrate,,6484-52-2,,-365.56,151.08,139.3,,,NBS
+Na(s),Na,s,1,sodium,,7440-23-5,,0,51.21,28.24,,371.0,NBS
+K(s),K,s,1,potassium,,7440-09-7,,0,64.18,29.58,,336.7,NBS
+Mg(s),Mg,s,1,magnesium,,7439-95-4,,0,32.68,24.89,,,NBS
+Ca(s),Ca,s,1,calcium,,7440-70-2,,0,41.42,25.31,,,NBS
+Al(s),Al,s,1,aluminium,aluminum,7429-90-5,,0,28.33,24.35,,933.5,NBS
+Fe(s),Fe,s,1,iron,,7439-89-6,,0,27.28,25.10,,,NBS
+Cu(s),Cu,s,1,copper,,7440-50-8,,0,33.150,24.44,,,NBS
+Zn(s),Zn,s,1,zinc,,7440-66-6,,0,41.63,25.40,,692.7,NBS
+Ag(s),Ag,s,1,silver,,7440-22-4,,0,42.55,25.35,,,NBS
+Sn(s),Sn,s,1,tin,white tin,7440-31-5,,0,51.55,26.99,,505.1,NBS
+Pb(s),Pb,s,1,lead,,7439-92-1,,0,64.81,26.44,,600.6,NBS
+Hg(l),Hg,l,1,mercury,,7439-97-6,[Hg],0,76.02,27.98,,629.9,NBS
+HgO(s),HgO,s,1,mercury(II) oxide,red mercuric oxide,21908-53-2,,-90.83,70.29,44.06,,,NBS
+NaCl(s),NaCl,s,1,sodium chloride,halite;table salt,7647-14-5,,-411.15,72.13,50.50,,1074,NBS
+NaOH(s),NaOH,s,1,sodium hydroxide,,1310-73-2,,-425.61,64.46,59.54,,,NBS
+KCl(s),KCl,s,1,potassium chloride,,7447-40-7,,-436.75,82.59,51.30,,,NBS
+MgO(s),MgO,s,1,magnesium oxide,magnesia,1309-48-4,,-601.70,26.94,37.15,,,NBS
+MgCO3(s),MgCO3,s,1,magnesium carbonate,magnesite,546-93-0,,-1095.8,65.7,75.52,,,NBS
+CaO(s),CaO,s,1,calcium oxide,lime;quicklime,1305-78-8,,-635.09,38.19,42.12,,,NIST
+CaCO3(s),CaCO3,s,1,calcium carbonate,calcite,471-34-1,,-1206.9,92.9,81.88,,,NBS
+Ca(OH)2(s),Ca(OH)2,s,1,calcium hydroxide,slaked lime,1305-62-0,,-986.09,83.39,87.49,,,NBS
+Al2O3(s),Al2O3,s,1,aluminium oxide,alumina;corundum,1344-28-1,,-1675.7,50.92,79.04,,,NBS
+SiO2(s),SiO2,s,1,silicon dioxide,quartz;silica,14808-60-7,,-910.94,41.84,44.43,,,NBS
+Fe2O3(s),Fe2O3,s,1,iron(III) oxide,hematite,1309-37-1,,-824.2,87.40,103.85,,,NBS
+Fe3O4(s),Fe3O4,s,1,iron(II;III) oxide,magnetite,1317-61-9,,-1118.4,146.4,143.43,,,NBS
+CuO(s),CuO,s,1,copper(II) oxide,tenorite,1317-38-0,,-157.3,42.63,42.30,,,NBS
+CuSO4(s),CuSO4,s,1,copper(II) sulfate,anhydrous copper sulfate,7758-98-7,,-771.36,109.0,100.0,,,NBS
+CuSO4·5H2O(s),CuSO4·5H2O,s,1,copper(II) sulfate pentahydrate,CuSO4*5H2O;CuSO4.5H2O;blue vitriol,7758-99-8,,-2279.7,300.4,280.0,,,NBS
+ZnO(s),ZnO,s,1,zinc oxide,,1314-13-2,,-350.46,43.65,40.25,,,NIST
+AgCl(s),AgCl,s,1,silver chloride,,7783-90-6,,-127.07,96.2,50.79,,,NBS
+H+(aq),H^+,aq,1,hydrogen ion,proton;H+;H3O+,12408-02-5,[H+],0,0,0,,,NBS
+OH-(aq),OH^-,aq,1,hydroxide ion,OH-,14280-30-9,[OH-],-229.99,-10.75,-148.5,,,NBS
+Na+(aq),Na^+,aq,1,sodium ion,Na+,17341-25-2,[Na+],-240.12,59.0,46.4,,,NBS
+K+(aq),K^+,aq,1,potassium ion,K+,24203-36-9,[K+],-252.38,102.5,21.8,,,NBS
+Ag+(aq),Ag^+,aq,1,silver ion,Ag+,14701-21-4,[Ag+],105.58,72.68,21.8,,,NBS
+Cu+(aq),Cu^+,aq,1,copper(I) ion,Cu+;cuprous ion,17493-86-6,[Cu+],71.67,40.6,,,,NBS
+Cu2+(aq),Cu^2+,aq,1,copper(II) ion,Cu2+;Cu+2;Cu++;cupric ion,15158-11-9,[Cu+2],64.77,-99.6,,,,NBS
+Zn2+(aq),Zn^2+,aq,1,zinc ion,Zn2+;Zn+2;Zn++,23713-49-7,[Zn+2],-153.89,-112.1,46,,,NBS
+Sn2+(aq),Sn^2+,aq,1,tin(II) ion,Sn2+;Sn+2;Sn++,22541-90-8,[Sn+2],-8.8,-17,,,,NBS
+Mg2+(aq),Mg^2+,aq,1,magnesium ion,Mg2+;Mg+2;Mg++,22537-22-0,[Mg+2],-466.85,-138.1,,,,NBS
+Ca2+(aq),Ca^2+,aq,1,calcium ion,Ca2+;Ca+2;Ca++,14127-61-8,[Ca+2],-542.83,-53.1,,,,NBS
+NH4+(aq),NH4^+,aq,1,ammonium ion,NH4+,14798-03-9,[NH4+],-132.51,113.4,79.9,,,NBS
+Cl-(aq),Cl^-,aq,1,chloride ion,Cl-,16887-00-6,[Cl-],-167.16,56.5,-136.4,,,NBS
+Br-(aq),Br^-,aq,1,bromide ion,Br-,24959-67-9,[Br-],-121.55,82.4,-141.8,,,NBS
+I-(aq),I^-,aq,1,iodide ion,I-,20461-54-5,[I-],-55.19,111.3,-142.3,,,NBS
+NO3-(aq),NO3^-,aq,1,nitrate ion,NO3-,14797-55-8,,-205.0,146.4,-86.6,,,NBS
+SO4^2-(aq),SO4^2-,aq,1,sulfate ion,SO42-;SO4-2;SO4--;SO4 2-,14808-79-8,,-909.27,20.1,-293,,,NBS
+CO3^2-(aq),CO3^2-,aq,1,carbonate ion,CO32-;CO3-2;CO3--,3812-32-6,,-677.14,-56.9,,,,NBS
+HCO3-(aq),HCO3^-,aq,1,bicarbonate ion,hydrogencarbonate ion;HCO3-,71-52-3,,-691.99,91.2,,,,NBS
+CO2(aq),CO2,aq,0,carbon dioxide (aq),,124-38-9,O=C=O,-413.80,117.6,,,,NBS
+NH3(aq),NH3,aq,0,ammonia (aq),,7664-41-7,N,-80.29,111.3,,,,NBS

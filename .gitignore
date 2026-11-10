@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.pytest_cache/
+.venv/
+venv*/
+*.png
+!docs/*.png
+*.csv
+!src/thermoreact/data/*.csv
+!examples/*.csv
+.DS_Store
