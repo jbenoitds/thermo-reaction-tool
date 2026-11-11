@@ -1,5 +1,3 @@
-*Last updated: November 6, 2026*
-
 # thermo-reaction-tool
 
 **`thermoreact`** is a reaction thermochemistry and equilibrium calculator for physical chemistry.
@@ -26,35 +24,17 @@ Reaction: N2(g) + 3 H2(g) → 2 NH3(g)
 ΔrG° = 0 (K = 1) at: 455.8 K (182.6 °C)
 ```
 
-It was written to check physical-chemistry problem sets quickly: the test suite includes the
-chemical-equilibrium exercises of a second-year thermodynamics course (Université de Montréal,
-CHM1402), checked against the answer key. It is meant to be easy to read and to extend: pure
-Python, no required dependencies, every equation in the code documented.
+I wrote it while taking CHM1402 (chemical thermodynamics) at the Université de Montréal, to check my problem sets faster than by hand. The tests still include the chemical-equilibrium exercises of that course, checked against the answer key. It is pure Python with no required dependencies, and I tried to keep every equation in the code easy to find.
 
----
+## Project history
 
-## Contents
-
-1. [Installation](#installation)
-2. [Quick start](#quick-start)
-3. [Writing reactions and species](#writing-reactions-and-species)
-4. [Commands](#commands)
-5. [Using it from Python](#using-it-from-python)
-6. [How it works](#how-it-works)
-7. [Data sources](#data-sources)
-8. [Accuracy and validation](#accuracy-and-validation)
-9. [Limitations](#limitations)
-10. [Adding your own data](#adding-your-own-data)
-11. [Project layout](#project-layout)
-12. [Development](#development)
-
----
+I wrote it in November 2022, without AI tools. Like my other projects, it stayed on my laptop (no version control) until I cleaned it up and published it here in November 2026, hence the single first commit. This README was rewritten with help from Claude, an AI assistant; the code is mine.
 
 ## Installation
 
 Requires Python 3.8 or newer. The core has **no third-party dependencies** (standard library only).
 
-Clone this repository (green **Code** button above → copy the URL) or download it as a ZIP, then:
+Clone the repository, then:
 
 ```bash
 cd thermo-reaction-tool
@@ -315,20 +295,15 @@ The test suite has 247 tests. Highlights:
 
 ## Limitations
 
-- **Ideal behaviour only:** ideal gases, pure condensed phases, and ideal 1 mol kg⁻¹ aqueous
-  standard states. No fugacity or activity coefficients.
-- **One reaction at a time** in the equilibrium solver: no simultaneous equilibria and no free-energy
-  minimisation. Aqueous species are not handled by the solver, though K is computed for them.
-- **Phase changes are not followed automatically.** Choose the right phase yourself; the tool warns
-  outside a phase's usual range.
-- **Constant Cp(298 K)** is used for species without a Cp(T) fit, which is less accurate far from
-  298 K. Ions keep their 298 K values.
-- **Joback estimates** are for ideal gases only. Errors are typically a few kJ/mol but larger for
-  small or strained molecules (e.g. cyclohexane, about +31 kJ/mol) and for some ethers
-  (dimethyl ether, about −33 kJ/mol). The method
-  does not cover inorganic species, charged species, or groups such as S=O.
-- **`--online`** only turns a name into a SMILES string through PubChem; the thermochemical data
-  still come from the bundled tables or the Joback estimate.
+Everything is ideal: ideal gases, pure condensed phases and ideal 1 mol kg⁻¹ aqueous standard states, with no fugacity or activity coefficients.
+
+The equilibrium solver handles one reaction at a time (no simultaneous equilibria, no free-energy minimisation) and leaves aqueous species out, even though K is computed for them. Phase changes are not followed automatically either: you choose the phase, and the tool warns you when you use it outside its usual range.
+
+Species without a Cp(T) fit use a constant Cp(298 K), which gets less accurate far from 298 K (ions always keep their 298 K values).
+
+Joback estimates are for ideal gases only. The error is usually a few kJ/mol, but it can be much larger for small or strained molecules (cyclohexane is off by about +31 kJ/mol) and for some ethers (dimethyl ether, about −33 kJ/mol). The method doesn't cover inorganic or charged species, or groups such as S=O.
+
+Finally, `--online` only turns a name into a SMILES string through PubChem; the thermochemical data still come from the bundled tables or from the Joback estimate.
 
 ## Adding your own data
 
@@ -374,10 +349,7 @@ python -m pytest --doctest-modules --pyargs thermoreact   # docstring examples
 
 The suite passes on Python 3.8, 3.9, 3.10 and 3.11. GitHub Actions runs it on every push for
 Python 3.10 and 3.11 (`.github/workflows/tests.yml`; GitHub's current runners no longer provide 3.8).
-The code and its dependencies only use tools and libraries released in 2022 or earlier: setuptools,
-argparse, pytest, matplotlib.
-
-Ideas for extensions: a small web front end, NASA 7-coefficient polynomials, phase transitions
+Things I'd like to add: a small web front end, NASA 7-coefficient polynomials, phase transitions
 inside Kirchhoff integrals, Benson group additivity, multi-reaction Gibbs minimisation.
 
 ## License
